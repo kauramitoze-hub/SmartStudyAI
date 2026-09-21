@@ -1180,7 +1180,7 @@ async function askSmartStudyAI(question) {
 
     try {
 
-        const response = await fetch("http://localhost:5000/ask-ai", {
+        const response = await fetch("https://smartstudyai-7bex.onrender.com/ask-ai", {
 
             method: "POST",
 
