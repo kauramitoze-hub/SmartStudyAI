@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SmartStudy AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            SmartStudy <span>AI</span>
+        </div>
+        <div class="nav-links">
+            <a href="#">Dashboard</a>
+            <a href="#">Study Plan</a>
+            <a href="#">Progress</a>
+        </div>
+    </nav>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <p class="tagline">
+                    AI-POWERED STUDY PLANNER
+                </p>
+                <h1>
+                    Study smarter.<br>
+                    Achieve more.
+                </h1>
+                <p class="description">
+                    Create personalized study plans, manage your
+                    daily tasks and track your exam preparation
+                    with SmartStudy AI.
+                </p>
+                <button id="startButton">
+    Create My Study Plan →
+</button>
+
+<section id="planForm" class="plan-form">
+
+    <h2>Create Your Personalized Study Plan</h2>
+
+    <p>
+        Tell us about your exams, study habits and goals.
+        SmartStudy AI will create a plan specially for you.
+    </p>
+    <label for="studentName">Your Name</label>
+    <input
+        type="text"
+        id="studentName"
+        placeholder="Enter your name"
+    >
+    <label for="subjects">Your Subjects</label>
+    <input
+        type="text"
+        id="subjects"
+        placeholder="Example: DBMS, Java, Maths"
+    >
+
+    <p class="input-help">
+        Separate multiple subjects using commas.
+    </p>
+    <label for="days">Days Until Exam</label>
+    <input
+        type="number"
+        id="days"
+        placeholder="Example: 15"
+        min="1"
+    <label for="hours">Daily Study Hours</label>
+    <input
+        type="number"
+        id="hours"
+        placeholder="Example: 4"
+        min="1"
+        max="16"
+    >
+    <label for="weakSubjects">
+        Which Subjects Do You Find Difficult?
+    </label>
+
+    <input
+        type="text"
+        id="weakSubjects"
+        placeholder="Example: Maths, DBMS"
+    >
+
+    <p class="input-help">
+        You can enter more than one subject.
+    </p>
+    <label for="strongSubjects">
+        Which Subjects Are You Comfortable With?
+    </label>
+
+    <input
+        type="text"
+        id="strongSubjects"
+        placeholder="Example: Java, C++"
+    >
+
+    <!-- Preferred Study Time -->
+    <label for="studyTime">
+        When Do You Prefer Studying?
+    </label>
+
+    <select id="studyTime">
+
+        <option value="">
+            Select your preferred time
+        </option>
+
+        <option value="morning">
+            Morning
+        </option>
+
+        <option value="afternoon">
+            Afternoon
+        </option>
+
+        <option value="evening">
+            Evening
+        </option>
+
+        <option value="night">
+            Night
+        </option>
+
+        <option value="flexible">
+            I'm Flexible
+        </option>
+
+    </select>
+
+    <!-- Goal -->
+    <label for="studyGoal">
+        What Is Your Main Goal?
+    </label>
+
+    <select id="studyGoal">
+
+        <option value="">
+            Select your goal
+        </option>
+
+        <option value="pass">
+            Pass All Subjects
+        </option>
+
+        <option value="improve">
+            Improve My Marks
+        </option>
+
+        <option value="high">
+            Score As High As Possible
+        </option>
+
+        <option value="consistent">
+            Build a Consistent Study Routine
+        </option>
+
+    </select>
+
+    <!-- Study Method -->
+    <label for="studyMethod">
+        How Do You Prefer To Study?
+    </label>
+
+    <select id="studyMethod">
+
+        <option value="">
+            Select your study style
+        </option>
+
+        <option value="concepts">
+            Concepts & Notes
+        </option>
+
+        <option value="practice">
+            Practice Questions
+        </option>
+
+        <option value="videos">
+            Videos & Visual Learning
+        </option>
+
+        <option value="mixed">
+            Mix of Everything
+        </option>
+
+    </select>
+
+    <!-- Generate Button -->
+    <button id="generateButton" type="button">
+        Generate My Personalized Plan →
+    </button>
+
+</section>
+</section>
+            </div>
+            <div class="study-card">
+                <h2>Study Overview</h2>
+                <div class="card-item">
+                    <div>
+                        <p>Days Remaining</p>
+                        <h3>15 Days</h3>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <div>
+                        <p>Overall Progress</p>
+                        <h3>42%</h3>
+                    </div>
+                </div>
+                <div class="progress-container">
+                    <div class="progress"></div>
+                </div>
+                <p class="progress-text">
+                    Keep going! You're making progress.
+                </p>
+            </div>
+        </section>
+        <section class="features">
+            <div class="feature-card">
+                <div class="feature-icon">📅</div>
+                <h3>Smart Timetable</h3>
+                <p>
+                    Get a personalized study schedule
+                    based on your exams and subjects.
+                </p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">✓</div>
+                <h3>Daily Tasks</h3>
+                <p>
+                    Know exactly what you need to study
+                    every single day.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">📊</div>
+                <h3>Progress Tracking</h3>
+                <p>
+                    Track your preparation and monitor
+                    subject-wise performance.
+                </p>
+            </div>
+        </section>
+    </main>
+<section id="studyHub" class="study-hub">
+
+    <div class="hub-header">
+
+        <p class="dashboard-label">
+            SMARTSTUDY LEARNING HUB
+        </p>
+
+        <h2>
+            Your Study Material
+        </h2>
+
+        <p>
+            Practice questions, quick notes and revision
+            resources — all in one place.
+        </p>
+
+    </div>
+    <div class="subject-selector">
+
+        <label for="hubSubject">
+            Choose a Subject
+        </label>
+
+        <select id="hubSubject">
+            <option value="">
+                Select a subject
+            </option>
+        </select>
+
+    </div>
+    <div id="subjectMaterial" class="subject-material">
+
+        <div class="material-placeholder">
+
+            <h3>
+                Select a subject to start studying
+            </h3>
+
+            <p>
+                Your personalized notes, topics and practice
+                questions will appear here.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+<section class="ai-chat-section">
+
+    <div class="ai-chat-header">
+        <p class="dashboard-label">SMARTSTUDY AI</p>
+        <h2>Ask Your Study Assistant</h2>
+        <p>
+            Ask questions, clear concepts, or get help with your subjects.
+        </p>
+    </div>
+
+    <div class="chat-box">
+
+        <div id="chatMessages" class="chat-messages">
+
+            <div class="ai-message">
+                Hi! I'm your SmartStudy AI assistant.
+                Ask me anything about your studies.
+            </div>
+
+        </div>
+
+        <div class="chat-input-area">
+
+            <input
+                type="text"
+                id="chatInput"
+                placeholder="Ask a question..."
+            >
+
+            <button id="sendChatButton">
+                Ask AI
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+    <script src="script.js"></script>
+</body>
+</html>
